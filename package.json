@@ -1,0 +1,10 @@
+{
+  "name": "elearning-site-dev",
+  "version": "0.0.1",
+  "description": "A NodeJs, html, development tool using Tailwindcss",
+  "main": "build.js",
+  "repository": "https://github.com/OCCeLearning/elearning-site-dev",
+  "author": "Neil Mastroianni",
+  "license": "MIT",
+  "private": false
+}
