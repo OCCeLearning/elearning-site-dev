@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "dev": "yarn tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "yarn tailwindcss -i ./src/input.css -o ./dist/output.css --minify && node build.js"
+    "build": "yarn tailwindcss -i ./src/input.css -o ./dist/output.css --minify && node build.js",
+    "restore": "node restore.js && npx prettier --write ./src/"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
