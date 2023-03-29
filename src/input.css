@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+:root {
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #134e4a;
+  --clr-4: #003767;
+  --clr-5: #581c87;
+}
+
+.programs {
+  @apply relative mx-3 md:mx-0;
+}
+
+.programs::before,
+.programs::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+}
+
+.programs::after {
+  @apply blur;
+}
+
+.page-title {
+  @apply w-3/4 rounded-sm bg-white bg-opacity-60 px-10 py-6 backdrop-blur-md md:w-full;
+}
+
+.blue-heading {
+  @apply text-darkblue !important;
+}
+
+.blue-link {
+  @apply font-semibold text-darkblue !important;
+}
+
+.white-heading {
+  @apply text-white !important;
+}
+
+.white-link {
+  @apply font-semibold text-white !important;
+}
+
+.sand-heading {
+  @apply text-sand !important;
+}
+
+.hero-heading {
+  @apply text-3xl md:text-5xl lg:text-7xl !important;
+}
+
+.hero-heading-small {
+  @apply text-2xl md:text-4xl lg:text-6xl !important;
+}
+
+.youtube-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  @apply rounded-md;
+}
+.youtube-container:after {
+  display: block;
+  content: '';
+  padding-top: 56.25%;
+}
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.checklist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.checklist li {
+  background: url(https://www.ocean.edu/wp-content/uploads/2022/05/small_check_logo_blue-padding-top.png)
+    no-repeat left -4px;
+  background-size: 25px 35px;
+  min-height: 35px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  margin: 1.4rem 0 1.4rem 1.3rem;
+}
+
+.bg-sky {
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+}
+.txtBox {
+  outline: none;
+  border: 1px solid #000;
+}
+#wpcf-custom-btn-0 {
+  justify-content: center;
+}
+#878 {
+  color: #fff;
+}
+summary {
+  cursor: pointer;
+}
+
+details > summary {
+  @apply list-none;
+}
+
+details[open] > summary > svg {
+  --tw-rotate: 90deg;
+}
+details > summary::-webkit-details-marker {
+  @apply hidden;
+}
+
+details[open] > ul > li > svg {
+  @apply mr-4;
+}
+
+details > summary > svg {
+  @apply rotate-0 transition duration-200 ease-in-out;
+}
+
+details[open] > summary > svg {
+  @apply rotate-90 transition duration-200 ease-in-out;
+}
