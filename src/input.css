@@ -16,7 +16,7 @@
 }
 
 @property --gradient-angle {
-  syntax: "<angle>";
+  syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
 }
@@ -44,7 +44,7 @@
 
 .programs::before,
 .programs::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -96,6 +96,14 @@
   @apply text-2xl md:text-4xl lg:text-6xl !important;
 }
 
+.blue-summary {
+  @apply bg-darkblue text-lg text-white;
+}
+
+.sand-summary {
+  @apply bg-sand text-lg text-darkblue;
+}
+
 .youtube-container {
   position: relative;
   overflow: hidden;
@@ -104,7 +112,7 @@
 }
 .youtube-container:after {
   display: block;
-  content: "";
+  content: '';
   padding-top: 56.25%;
 }
 .youtube-container iframe {
@@ -145,7 +153,7 @@
   color: #fff;
 }
 summary {
-  cursor: pointer;
+  @apply cursor-pointer rounded-md py-3 pl-4;
 }
 
 details > summary {
