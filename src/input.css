@@ -116,6 +116,10 @@
   @apply bg-sand text-darkblue;
 }
 
+.staff-name {
+  @apply text-2xl font-semibold text-darkblue;
+}
+
 .youtube-container {
   position: relative;
   overflow: hidden;
