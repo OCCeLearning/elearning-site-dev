@@ -8,6 +8,10 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- MOBILE SCROLLING MENU -->
+    <p class="-mb-6 mt-4 p-0 text-center text-xs lg:hidden">
+      &larr; scroll for more options &rarr;
+    </p>
     <nav
       class="no-scrollbar mx-auto my-6 flex items-center gap-x-4 overflow-x-auto md:text-lg lg:justify-center lg:text-xl"
     >
@@ -47,6 +51,7 @@
         >Technical Support</a
       >
     </nav>
+    <!-- MOBILE SCROLLING MENU -->
     <!-- HERO SECTION -->
     <section>
       <div class="px-6 py-12 text-gray-800 md:px-12 lg:text-left">
@@ -54,7 +59,7 @@
           <div class="grid items-center lg:grid-cols-2">
             <div class="md:mb-12 lg:mb-0">
               <img
-                src="https://www.ocean.edu/wp-content/uploads/2018/06/38570405_M.jpg"
+                src="https://images.unsplash.com/photo-1543269865-f576bdee5d1d"
                 class="w-full rounded shadow-md"
                 alt=""
               />
@@ -101,9 +106,16 @@
     <!-- HERO SECTION -->
     <!-- SUPPORT INFO -->
     <section class="mx-auto grid max-w-screen-sm gap-y-6">
+      <div class="prose prose-lg mx-auto max-w-screen-sm lg:prose-xl">
+        <h2 class="text-center text-darkblue">Our Apps</h3>
+        <p>
+          Having trouble with an app? Below you will find a list
+          of the apps we use and links to resources to help.
+        </p>
+      </div>
       <!-- ARTICULATE -->
       <details>
-        <summary class="rounded bg-darkblue py-3 pl-4 text-white">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -123,65 +135,20 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://articulate.com/support/article/System-Requirements-for-Articulate-Storyline-360"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Requirements</a
             >
-            <a
-              href="https://articulate.com/trust/privacy"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+            <a href="https://articulate.com/trust/privacy" class="btn blue-btn"
               >Privacy</a
             >
             <a
               href="https://articulate.com/support/article/Articulate-360-FAQs-Accessibility"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Accessibility</a
             >
             <a
               href="https://articulate.com/support/contact"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
-              >Support</a
-            >
-          </div>
-        </div>
-      </details>
-      <!-- BADGR -->
-      <details>
-        <summary class="rounded bg-sand py-3 pl-4 text-darkblue">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="inline"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
-          Badgr
-        </summary>
-        <div>
-          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
-            <a
-              href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-are-the-browser-and-computer-requirements-for-Instructure/ta-p/66"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
-              >Requirements</a
-            >
-            <a
-              href="https://www.instructure.com/policies/privacy-badgr?domain=badgr"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
-              >Privacy</a
-            >
-            <a
-              href="https://www.instructure.com/policies/badgr-accessibility"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
-              >Accessibility</a
-            >
-            <a
-              href="https://community.canvaslms.com/t5/Canvas-Credentials-Badges/ct-p/canvas-credentials-badges"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Support</a
             >
           </div>
@@ -189,7 +156,7 @@
       </details>
       <!-- CANVAS -->
       <details>
-        <summary class="rounded bg-darkblue py-3 pl-4 text-white">
+        <summary class="sand-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -218,22 +185,22 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-are-the-browser-and-computer-requirements-for-Instructure/ta-p/66"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Requirements</a
             >
             <a
               href="https://www.instructure.com/canvas/privacy"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Privacy</a
             >
             <a
               href="https://www.instructure.com/accessibility"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Accessibility</a
             >
             <a
               href="https://www.instructure.com/faq/canvas-support"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Support</a
             >
           </div>
@@ -241,7 +208,7 @@
       </details>
       <!-- CENGAGE CNOWv2 -->
       <details>
-        <summary class="rounded bg-sand py-3 pl-4 text-darkblue">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -261,22 +228,18 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://cengage.force.com/s/article/CengageNOWv2-System-Requirements"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Requirements</a
             >
-            <a
-              href="https://www.cengagegroup.com/privacy/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+            <a href="https://www.cengagegroup.com/privacy/" class="btn blue-btn"
               >Privacy</a
             >
             <a
               href="https://www.cengagegroup.com/accessibility/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Accessibility</a
             >
-            <a
-              href="https://cengage.force.com/s/login/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+            <a href="https://cengage.force.com/s/login/" class="btn blue-btn"
               >Support</a
             >
           </div>
@@ -284,7 +247,7 @@
       </details>
       <!-- CENGAGE MINDTAP -->
       <details>
-        <summary class="rounded bg-darkblue py-3 pl-4 text-white">
+        <summary class="sand-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -304,22 +267,18 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://help.cengage.com/mindtap/mt-student/common/system-requirements.html"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Requirements</a
             >
-            <a
-              href="https://www.cengagegroup.com/privacy/"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+            <a href="https://www.cengagegroup.com/privacy/" class="btn sand-btn"
               >Privacy</a
             >
             <a
               href="https://www.cengagegroup.com/accessibility/"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Accessibility</a
             >
-            <a
-              href="https://cengage.force.com/s/login/"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+            <a href="https://cengage.force.com/s/login/" class="btn sand-btn"
               >Support</a
             >
           </div>
@@ -327,7 +286,7 @@
       </details>
       <!-- CENGAGE OWLv2 -->
       <details>
-        <summary class="rounded bg-sand py-3 pl-4 text-darkblue">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -347,22 +306,143 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://cengage.force.com/s/article/OWLv2-System-Requirements"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Requirements</a
             >
-            <a
-              href="https://www.cengagegroup.com/privacy/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+            <a href="https://www.cengagegroup.com/privacy/" class="btn blue-btn"
               >Privacy</a
             >
             <a
               href="https://www.cengagegroup.com/accessibility/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
+              >Accessibility</a
+            >
+            <a href="https://cengage.force.com/s/login/" class="btn blue-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- CENGAGE SAM -->
+      <details>
+        <summary class="sand-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Cengage SAM
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://help.cengage.com/sam/instructor/common/system-requirements.html"
+              class="btn sand-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://help.cengage.com/sam/instructor/common/privacy-policy.html"
+              class="btn sand-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://help.cengage.com/sam/sysreq/common/accessibility.html"
+              class="btn sand-btn"
               >Accessibility</a
             >
             <a
-              href="https://cengage.force.com/s/login/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              href="https://help.cengage.com/sam/sysreq/common/contact-support.html"
+              class="btn sand-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- Cisco Netacad -->
+      <details>
+        <summary class="blue-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Cisco Netacad
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://www.netacad.com/support#_Toc370"
+              class="btn blue-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://www.cisco.com/c/en/us/about/legal/privacy.html"
+              class="btn blue-btn"
+              >Privacy</a
+            >
+            <a href="https://www.netacad.com/accessibility" class="btn blue-btn"
+              >Accessibility</a
+            >
+            <a href="https://www.netacad.com/support" class="btn blue-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- Coursera -->
+      <details>
+        <summary class="sand-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Coursera
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://www.coursera.support/s/article/209818543-Recommended-browsers-and-devices?language=en_US"
+              class="btn sand-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://www.coursera.org/about/privacy"
+              class="btn sand-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://www.coursera.support/s/article/360050668591-Accessibility-Statement?"
+              class="btn sand-btn"
+              >Accessibility</a
+            >
+            <a
+              href="https://www.coursera.support/s/learner-help-center"
+              class="btn sand-btn"
               >Support</a
             >
           </div>
@@ -370,7 +450,7 @@
       </details>
       <!-- H5P -->
       <details>
-        <summary class="rounded bg-darkblue py-3 pl-4 text-white">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -388,32 +468,22 @@
         </summary>
         <div>
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
-            <a
-              href="https://h5p.org/node/2014"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+            <a href="https://h5p.org/node/2014" class="btn blue-btn"
               >Requirements</a
             >
-            <a
-              href="https://h5p.org/privacy"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
-              >Privacy</a
-            >
+            <a href="https://h5p.org/privacy" class="btn blue-btn">Privacy</a>
             <a
               href="https://h5p.org/documentation/installation/content-type-accessibility"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Accessibility</a
             >
-            <a
-              href="https://h5p.org/contact"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
-              >Support</a
-            >
+            <a href="https://h5p.org/contact" class="btn blue-btn">Support</a>
           </div>
         </div>
       </details>
       <!-- HONORLOCK -->
       <details>
-        <summary class="rounded bg-sand py-3 pl-4 text-darkblue">
+        <summary class="sand-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -433,22 +503,20 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://honorlock.kb.help/minimum-system-requirements/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Requirements</a
             >
             <a
               href="https://honorlock.com/student-privacy-statement/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Privacy</a
             >
             <a
               href="https://honorlock.com/accessibility-statement/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Accessibility</a
             >
-            <a
-              href="https://honorlock.com/support/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+            <a href="https://honorlock.com/support/" class="btn sand-btn"
               >Support</a
             >
           </div>
@@ -456,7 +524,7 @@
       </details>
       <!-- KNEWTON ALTA -->
       <details>
-        <summary class="rounded bg-darkblue py-3 pl-4 text-white">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -476,22 +544,18 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://support.knewton.com/s/article/Accessing-Alta-and-Our-Recommended-Web-Browsers"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Requirements</a
             >
-            <a
-              href="https://www.wiley.com/en-us/privacy"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+            <a href="https://www.wiley.com/en-us/privacy" class="btn blue-btn"
               >Privacy</a
             >
             <a
               href="https://www.knewton.com/accessibility/"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Accessibility</a
             >
-            <a
-              href="https://support.knewton.com/s/"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+            <a href="https://support.knewton.com/s/" class="btn blue-btn"
               >Support</a
             >
           </div>
@@ -499,7 +563,7 @@
       </details>
       <!-- MACMILLAN -->
       <details>
-        <summary class="rounded bg-sand py-3 pl-4 text-darkblue">
+        <summary class="sand-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -519,22 +583,22 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://www.macmillaneducationeverywhere.com/system-requirements/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Requirements</a
             >
             <a
               href="https://store.macmillanlearning.com/us/privacy-notice?_ga=2.182539814.1413382344.1679853376-578113996.1679853376"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Privacy</a
             >
             <a
               href="https://www.macmillanlearning.com/college/us/our-story/accessibility"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Accessibility</a
             >
             <a
               href="https://www.macmillanlearning.com/college/us/contact-us"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Support</a
             >
           </div>
@@ -542,7 +606,7 @@
       </details>
       <!-- MCGRAW HILL -->
       <details>
-        <summary class="rounded bg-darkblue py-3 pl-4 text-white">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -562,22 +626,309 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://highered.mheducation.com/sites/0000065899/student_view0/getting_started/system_requirements.html"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Requirements</a
             >
             <a
               href="https://www.mheducation.com/privacy.html"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Privacy</a
             >
             <a
               href="https://www.mheducation.com/about/accessibility.html"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
+              >Accessibility</a
+            >
+            <a href="https://mhedu.force.com/CXG/s/" class="btn blue-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- NHA Now -->
+      <details>
+        <summary class="sand-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          NHA Now
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://info.nhanow.com/technical-requirements"
+              class="btn sand-btn"
+              >Requirements</a
+            >
+            <a href="https://www.nhanow.com/privacy-policy" class="btn sand-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://www.nhanow.com/resources/support/contact-us"
+              class="btn sand-btn"
               >Accessibility</a
             >
             <a
-              href="https://mhedu.force.com/CXG/s/"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              href="https://www.nhanow.com/resources/support/help-center"
+              class="btn sand-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- Pearson  MyLabs-->
+      <details>
+        <summary class="blue-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Pearson MyLabs
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://mlm.pearson.com/northamerica/mymathlab/system-requirements/"
+              class="btn blue-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://www.pearson.com/en-us/legal-information/privacy-policy.html"
+              class="btn blue-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://www.pearson.com/en-us/pearsonplus/legal/accessibility.html"
+              class="btn blue-btn"
+              >Accessibility</a
+            >
+            <a
+              href="https://mlm.pearson.com/northamerica/students/support/index.html"
+              class="btn blue-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- PHET -->
+      <details>
+        <summary class="sand-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          PhET
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://phet.colorado.edu/en/help-center/running-sims/general"
+              class="btn sand-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://phet.colorado.edu/about/software-agreement_v7.htm#:~:text=colorado.edu.-,II.%20PRIVACY%20POLICY,-A.%20COMMITMENT"
+              class="btn sand-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://phet.colorado.edu/en/simulations/filter?type=html,prototype&a11yFeatures=accessibility"
+              class="btn sand-btn"
+              >Accessibility</a
+            >
+            <a
+              href="https://phet.colorado.edu/en/help-center/running-sims"
+              class="btn sand-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- Pivot Interactive-->
+      <details>
+        <summary class="blue-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Pivot Interactive
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://help.pivotinteractives.com/en/articles/3833505-minimum-system-requirements-for-pivot-interactives"
+              class="btn blue-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://www.pivotinteractives.com/privacy-policy"
+              class="btn blue-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://help.pivotinteractives.com/en/articles/3827516-accessibility"
+              class="btn blue-btn"
+              >Accessibility</a
+            >
+            <a
+              href="https://help.pivotinteractives.com/en/"
+              class="btn blue-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- Rouxbe -->
+      <details>
+        <summary class="sand-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Rouxbe
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://rouxbe.s3.us-east-1.amazonaws.com/PDF/RXB_FAQ_Sheet.pdf"
+              class="btn sand-btn"
+              >Requirements</a
+            >
+            <a href="https://rouxbe.com/privacy" class="btn sand-btn"
+              >Privacy</a
+            >
+            <a href="https://rouxbe.com/contact/" class="btn sand-btn"
+              >Accessibility</a
+            >
+            <a href="https://rouxbe.com/contact/" class="btn sand-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- Stat Crunch-->
+      <details>
+        <summary class="blue-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Stat Crunch
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://www.statcrunch.com/help/view?example=1"
+              class="btn blue-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://www.pearsonassessments.com/footer/pearson-clinical-privacy-policy.html?gclid=Cj0KCQjww4-hBhCtARIsAC9gR3Y-ZuyeGBEJRBjbhb9rC_uUNcW7um25-c7Z9auXhpiuCc8GHszITHMaAummEALw_wcB"
+              class="btn blue-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://www.statcrunch.com/accessibility"
+              class="btn blue-btn"
+              >Accessibility</a
+            >
+            <a href="https://www.statcrunch.com/help" class="btn blue-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- uCertify -->
+      <details>
+        <summary class="sand-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          uCertify
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://www.ucertify.com/about/contactus.html"
+              class="btn sand-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://www.ucertify.com/about/privacy.html"
+              class="btn sand-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://www.ucertify.com/about/accessibility_ada.html"
+              class="btn sand-btn"
+              >Accessibility</a
+            >
+            <a href="https://www.ucertify.com/support.php" class="btn sand-btn"
               >Support</a
             >
           </div>
@@ -585,7 +936,7 @@
       </details>
       <!-- VOICETHREAD -->
       <details>
-        <summary class="rounded bg-sand py-3 pl-4 text-darkblue">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -605,22 +956,22 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://voicethread.com/howto/browser-requirements/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Requirements</a
             >
             <a
               href="https://voicethread.com/howto-categories/privacy-faq/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Privacy</a
             >
             <a
               href="https://voicethread.com/about/features/accessibility/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Accessibility</a
             >
             <a
               href="https://voicethread.com/support/contact/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Support</a
             >
           </div>
@@ -628,7 +979,7 @@
       </details>
       <!-- WEBEX -->
       <details>
-        <summary class="rounded bg-darkblue py-3 pl-4 text-white">
+        <summary class="sand-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -648,22 +999,20 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://help.webex.com/en-us/article/fz1e4b/System-requirements-for-Webex-services"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Requirements</a
             >
             <a
               href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Privacy</a
             >
             <a
               href="https://www.webex.com/accessibility.html"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+              class="btn sand-btn"
               >Accessibility</a
             >
-            <a
-              href="https://help.webex.com/contact"
-              class="my-2 flex items-center justify-center rounded bg-sand px-4 py-3 text-center text-darkblue no-underline transition duration-300 ease-in-out"
+            <a href="https://help.webex.com/contact" class="btn sand-btn"
               >Support</a
             >
           </div>
@@ -671,7 +1020,7 @@
       </details>
       <!-- YOUTUBE -->
       <details>
-        <summary class="rounded bg-sand py-3 pl-4 text-darkblue">
+        <summary class="blue-summary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -691,22 +1040,65 @@
           <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
             <a
               href="https://support.google.com/youtube/answer/78358?hl=en"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Requirements</a
             >
             <a
               href="https://policies.google.com/privacy?hl=en"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Privacy</a
             >
             <a
               href="https://www.google.com/accessibility/products-features/"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
               >Accessibility</a
             >
             <a
               href="https://support.google.com/youtube/community?hl=en"
-              class="my-2 flex items-center justify-center rounded bg-darkblue px-4 py-3 text-center text-white no-underline transition duration-300 ease-in-out"
+              class="btn blue-btn"
+              >Support</a
+            >
+          </div>
+        </div>
+      </details>
+      <!-- Zybooks -->
+      <details>
+        <summary class="sand-summary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="inline"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          Zybooks
+        </summary>
+        <div>
+          <div class="grid grid-flow-row lg:grid-flow-col lg:gap-x-3">
+            <a
+              href="https://www.zybooks.com/system-requirements/"
+              class="btn sand-btn"
+              >Requirements</a
+            >
+            <a
+              href="https://www.zybooks.com/privacy-policy/"
+              class="btn sand-btn"
+              >Privacy</a
+            >
+            <a
+              href="https://www.zybooks.com/accessibility/"
+              class="btn sand-btn"
+              >Accessibility</a
+            >
+            <a
+              href="https://zybooks.zendesk.com/hc/en-us/requests/new"
+              class="btn sand-btn"
               >Support</a
             >
           </div>

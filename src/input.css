@@ -104,6 +104,18 @@
   @apply bg-sand text-lg text-darkblue;
 }
 
+.btn {
+  @apply my-2 flex items-center justify-center rounded px-4 py-3 text-center no-underline;
+}
+
+.blue-btn {
+  @apply bg-darkblue text-sand;
+}
+
+.sand-btn {
+  @apply bg-sand text-darkblue;
+}
+
 .youtube-container {
   position: relative;
   overflow: hidden;
