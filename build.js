@@ -15,6 +15,10 @@ htmlFiles.forEach((file) => {
       .replace(/(lg:)/g, 'lg-')
       .replace(/(xl:)/g, 'xl-')
       .replace(/(hover:)/g, 'hover-')
+      .replace(
+        /(<link href=\"\/dist\/output\.css\" rel=\"stylesheet\" \/>)/g,
+        '<link href="output.css" rel="stylesheet" />'
+      )
     const minresult = minify(result, { collapseWhitespace: true })
     fs.writeFile(`./dist/${file}`, minresult, 'utf-8', (err) => {
       if (err) throw err
