@@ -15,6 +15,7 @@ htmlFiles.forEach((file) => {
       .replace(/(lg:)/g, 'lg-')
       .replace(/(xl:)/g, 'xl-')
       .replace(/(hover:)/g, 'hover-')
+    // .replace(/(\/dist\/output.css)/g, '/output.css')
     const minresult = minify(result, { collapseWhitespace: true })
     fs.writeFile(`./dist/${file}`, minresult, 'utf-8', (err) => {
       if (err) throw err
